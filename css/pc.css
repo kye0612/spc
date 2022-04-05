@@ -119,6 +119,9 @@ label.fa-bars{
 .slide > ul > li > a{
     width: 100%;
 }
+.m_home{
+    overflow: hidden;
+}
   /* 메인슬라이드 콘텐츠 */
   .m_content{
       position: relative;
@@ -143,6 +146,9 @@ label.fa-bars{
   .m_btn:hover{
       background-color: #1B2E5A;
   }
+  .m_home{
+      overflow: hidden;
+  } 
   .search{
       position: absolute;
       width: 200px;
@@ -426,31 +432,213 @@ label.fa-bars{
 /* 카테고리 콘텐츠 */
 .category{
     width: 100%;
-    /* height: 700px; */
-    background-color: #1AB7EA;
+    height: 960px;
+    /* background-color: #1AB7EA; */
+    background:url(../images/bg_spc.jpg) no-repeat;
+    background-size: 100%;
+
 }
-.category div{
+/* .category div{
     width: 100%;
     height: 960px;
     background:url(../images/bg_spc.jpg) no-repeat;
     background-size: 100%;
     margin-top: 50px;
-}
-.category ul{
-    /* height: 200px; */
-    /* background-color: #1AB7EA; */
-}
-/* .category ul li{
+} */
+
+/*section.speciality*/
+.section.speciality .wrap {
+    width: 995px;
+    margin: 50px auto;
+  }
+  
+  .section.speciality .wrap ul {
+    font-size: 0;
+    padding-top: 263px;
+  }
+  
+  .section.speciality .wrap li {
     display: inline-block;
     position: relative;
     width: 25%;
     vertical-align: top;
-    border:1px solid #fff;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
-    background-color: rgba(17,63,125,0.3);
+    background: rgba(17, 63, 125, 0.3);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-} */
-
+  }
+  
+  .section.speciality .wrap li:last-child {
+    display: none;
+  }
+  
+  .section.speciality .wrap li:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .section.speciality .wrap li>a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .section.speciality .wrap .img_biz>.hover_content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  
+  .section.speciality .wrap .img_biz:hover>.hover_content {
+    opacity: 1;
+  }
+  
+  .section.speciality .wrap .cont01 .hover_content {
+    background: url(../images/h_02.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont02 .hover_content {
+    background: url(../images/h_03.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont03 .hover_content {
+    background: url(../images/h_04.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont04 .hover_content {
+    background: url(../images/h_05.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont05 .hover_content {
+    background: url(../images/h_06.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont06 .hover_content {
+    background: url(../images/h_07.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont07 .hover_content {
+    background: url(../images/h_08.png) no-repeat;
+  }
+  
+  .section.speciality .wrap .cont08 .hover_content {
+    background: url(../images/h_09.png) no-repeat;
+  }
+  
+  .section.speciality .wrap li:hover {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content01 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content02 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content03 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content04 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content05 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content06 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content07 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .wrap li:hover>.img_biz>.hover_content08 {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+  
+  .section.speciality .btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 47px;
+    height: 47px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .section.speciality .btn:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: center center;
+    transition: all .5s ease;
+    background-color: #fff;
+    width: 10px;
+    height: 2px;
+  }
+  
+  .section.speciality .btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    transition: all .5s ease;
+    background-color: #fff;
+    width: 10px;
+    height: 2px;
+  }
+  
+  .section.speciality .text {
+    width: 80%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+  .section.speciality .text h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  
 /* 인재상 */
 .spc_person{
     margin-top: 50px;
@@ -508,7 +696,8 @@ label.fa-bars{
 }
 .person_box{
     position: absolute;
-    top: 25%; right: 50%;
+    top: 25%;
+    right: 50%;
     transform: translate(50%);
     width: 200px;
     height: 270px;
@@ -692,7 +881,7 @@ label.fa-bars{
 .qna > .qna-list > li > p{ 
   /* font-size:14px; */
   background-color:rgba(255,255,255,0.2);
-  padding:40px 10px 40px 10px;
+  padding: 30px 10px 30px 10px;
   display:none;
   line-height:23px;
   font-size:14px;
@@ -721,7 +910,7 @@ label.fa-bars{
 /* 푸터 영역 */
 footer{
     position: relative;
-    top: 1000px;
+    top: 566px;
     height: 170px; 
     background-color: #333;
 }
@@ -859,25 +1048,3 @@ footer{
   .list_app{
     display: none;
   }
-/* .f_box{
-    position:relative;
-    width: 1280px;
-    height: 170px;
-    margin: 0px auto;
-}
-.f_box > p{
-    position: relative;
-    top: 60px;
-    color: #ccc;
-    font-size: 12px;
-    text-align: center;
-    line-height: 23px;
-    letter-spacing:2px;
-}
-.f_box > a > img{
-    position: relative;
-    top: 47px;
-    left: 597px;
-    width: 22px;
-    margin-left: 14px;
-} */
